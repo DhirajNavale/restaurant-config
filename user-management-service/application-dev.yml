@@ -1,0 +1,23 @@
+okta:
+  oauth2:
+    issuer: https://dev-96796937.okta.com/oauth2/default
+    audience: api://default
+#    client-id: 0oa56bs651b3zDlVW5d7
+#    client-secret: rqT0fjI6UyrAG2riJktkOY4P2brWINAhAK1DfJqP
+  client:
+    orgUrl: https://dev-96796937.okta.com
+    token: 00nPcSnD98nnDa-nl_BF_mkxUycoVm0J7LX-iwcvqj
+
+application-version: '1.0'
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka-server/eureka/
+spring:
+  application:
+    name: user-management-service
+server:
+  port: 8800
+application-description: Service to handle restaurant users
