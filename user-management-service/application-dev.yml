@@ -16,10 +16,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka-server/eureka/
 spring:
+  zipkin:
+    baseUrl: http://localhost:9411/
   application:
     name: user-management-service
 server:
   port: 8800
 application-description: Service to handle restaurant users
-  zipkin:
-    baseUrl: http://localhost:9411/
