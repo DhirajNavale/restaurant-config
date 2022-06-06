@@ -22,4 +22,4 @@ spring:
     name: user-management-service
 server:
   port: 8800
-application-description: Service to handle restaurant users
+  application-description: Service to handle restaurant users
